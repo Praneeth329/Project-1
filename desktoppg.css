@@ -2,6 +2,33 @@
     background-color: #dfc327;
 }
 
+@keyframes from-left {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes from-bottom {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom:0
+    }
+}
+
+@keyframes from-right {
+    from {
+        right: -250px;
+    }
+    to {
+        right: 0;
+    }
+}
+
  .parent {
     width: 100%;
     display: grid;
@@ -68,33 +95,18 @@
 }
 
 .event-info-right p, button {
-    animation: event-right 0.7s 1s linear;
+    animation: from-bottom 0.7s 1s linear;
     position: relative;
 }
-@keyframes event-right {
-    from {
-        bottom: -100px;
-    }
-    to {
-        bottom: 0;
-    }
-}
+
 
 .event-info-left img {
     width: 100%;
     height: 100%;
-    animation: lady-img1 0.7s 1s linear;
+    animation: from-left 0.7s 1s linear;
     position: relative;
 }
 
-@keyframes lady-img1 {
-    from {
-        left: -150px;
-    }
-    to {
-        left: 0;
-    }
-}
 
 .event-info-right img {
     width: 30%;
@@ -162,16 +174,8 @@
 }
 
 .about-event:hover .four-about-event {
-    animation: four-cards 1s 1s linear;
+    animation: from-bottom 0.7s 1s linear;
     position: relative;
-}
-@keyframes four-cards {
-    from {
-        bottom: -100px;
-    }
-    to {
-        bottom: 0;
-    }
 }
 
 .four-about-event img {
@@ -187,29 +191,24 @@
     font-style: bold;
 }
 
-.yoga-type {
+.yoga-type{
     height: 100vh;
     display: flex;
 }
 
+.yoga-type:hover .yoga-type-left-img {
+    animation: from-left 0.7s 1s linear;
+}
+
+.yoga-type:hover .yoga-type-right-info {
+    animation: from-right 0.7s 1s linear;
+}
 .yoga-type-left-img, .yoga-type-right-info {
     width:50%;
     display: flex;
     position: relative;
 }
 
-.yoga-type-left-img:hover{
-    animation: lady2-img 0.7s 1s linear;
-}
-
-@keyframes lady2-img {
-    from {
-        left: -150px;
-    }
-    to {
-        left: 0;
-    }
-}
 
 .yoga-type-right-info {
     display: flex;
@@ -217,19 +216,6 @@
     margin: 5%;
     font-size: 25px;
 }
-
-.yoga-type-right-info:hover {
-    animation: yoga-right 0.7s 1s linear;
-}
-
-/* @keyframes yoga-right {
-    from {
-        right: -250px;
-    }
-    to {
-        right: 0;
-    }
-} */
 
 .info-title {
    
@@ -264,7 +250,12 @@ ul li:before {
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: yellow;   
+    background-color: yellow;  
+}
+
+.type-desc:hover .five-types {
+    animation: from-bottom 0.7s 1s linear;
+    position: relative;
 }
 
 .five-types {
@@ -305,6 +296,16 @@ ul li:before {
     height: 100vh;
 }
 
+.yoga-benefit:hover .yoga-benefit-left-txt {
+    animation: from-bottom 0.7s 1s linear;
+    position: relative;
+}
+
+.yoga-benefit:hover .yoga-benefit-right-img {
+    animation: from-right 0.7s 1s linear;
+    position: relative;
+}
+
 .yoga-benefit-left-txt, .yoga-benefit-right-img {
     width: 50%;
     display: flex;
@@ -336,6 +337,17 @@ ul li:before {
     height: 100vh;
     background-color: yellow;
 }
+
+.mob-app:hover .mob-app-left-img {
+    animation: from-left 0.7s 1s linear;
+    position: relative;
+}
+
+.mob-app:hover .mob-app-right-content {
+    position: relative;
+    animation: zooming 0.7s 1s ease-out;
+}
+
 
 .mob-app-left-img, .mob-app-right-content {
     width: 50%;
@@ -377,6 +389,15 @@ ul li:before {
     height: 100vh;
     display: flex;
     text-align: center;
+}
+
+.yoga-membership:hover .yoga-membership-left-content {
+    animation: from-bottom 0.7s 1s linear;
+    position: relative;
+}
+.yoga-membership:hover .yoga-membership-right-img {
+    animation: from-right 0.7s 1s linear;
+    position: relative;
 }
 
 .yoga-membership-left-content{ 
@@ -659,7 +680,7 @@ input, textarea {
     .yoga-type {
         display: flex;
         flex-flow: column;
-        height: 160vh;
+        height: 150vh;
     }
 
     .yoga-type-left-img, .yoga-type-right-info {
@@ -728,7 +749,7 @@ input, textarea {
     }
 
     .yoga-benefit {
-        height: 140vh;
+        height: 130vh;
         width: 100%;
         display: flex;
         flex-flow: column;
@@ -776,7 +797,7 @@ input, textarea {
 
     .yoga-membership {
         width: 100%;
-        height: 180vh;
+        height: 160vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -854,7 +875,7 @@ input, textarea {
     }
     .contact {
         width: 100%;
-        height: 210vh;
+        height: 200vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -1137,6 +1158,7 @@ input, textarea {
     }
 
     .about-event{
+        width: 100%;
         height: 80vh;
     }
 
@@ -1147,8 +1169,9 @@ input, textarea {
     }
     .four-about-event {
         display: flex;
+        justify-content: space-evenly;
         height: 30vh;
-        width: 40vw;
+        width: 35vw;
         border-radius: 10%;
     }
 
@@ -1353,7 +1376,7 @@ input, textarea {
     }
     .contact {
         width: 100%;
-        height: 270vh;
+        height: 250vh;
         display: flex;
         flex-flow: column;
         align-items: center;

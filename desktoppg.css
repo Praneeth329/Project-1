@@ -222,14 +222,14 @@
     animation: yoga-right 0.7s 1s linear;
 }
 
-@keyframes yoga-right {
+/* @keyframes yoga-right {
     from {
         right: -250px;
     }
     to {
         right: 0;
     }
-}
+} */
 
 .info-title {
    
@@ -262,8 +262,8 @@ ul li:before {
 
 .type-desc {
     height: 100vh;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     background-color: yellow;   
 }
 

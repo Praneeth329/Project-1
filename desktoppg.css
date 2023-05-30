@@ -590,6 +590,10 @@ input, textarea {
         height: 80%;
     }
 
+    .parent {
+        width: 100%;
+        overflow-x: hidden;
+    }
     .head-icons {
         margin-right: 130px;
         display: flex;

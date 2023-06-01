@@ -47,11 +47,6 @@
     background-color: rgb(240, 235, 235);
 }
 
-.head-title-img img {
-    width: 100%;
-    height: 100%;
-}
-
 .head-icons {
     display: flex;
     align-items: center;
@@ -92,6 +87,7 @@
 .event-info-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .event-info-right p, button {
@@ -99,14 +95,12 @@
     position: relative;
 }
 
-
 .event-info-left img {
     width: 100%;
     height: 100%;
     animation: from-left 0.7s 1s linear;
     position: relative;
 }
-
 
 .event-info-right img {
     width: 30%;
@@ -118,13 +112,12 @@
 }
 
 .day {
-    color: yellow;
+    color: #dfc327;
 }
 
 .txt-freepik-link {
     width: 30vw;
-     font-size: 1.5rem;
-     font-family: "";
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -151,18 +144,12 @@
 }
 
 .about-event {
-    width: 100%;
     height: 50vh;
-     background-color: yellow;
-}
-
-.about-event-sub {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 50vh;
-    width: 100%;
 }
+
 .four-about-event {
     display: flex;
     flex-direction: column;
@@ -181,14 +168,13 @@
 .four-about-event img {
     width: 35%;
     height: 35%;
-    background-color: yellow;
+    background-color: #dfc327;
     border-radius: 50%;
     margin-top: 20%;
 }
 
 .four-about-event p {
     font-size: 20px;
-    font-style: bold;
 }
 
 .yoga-type{
@@ -209,7 +195,6 @@
     position: relative;
 }
 
-
 .yoga-type-right-info {
     display: flex;
     flex-direction: column;
@@ -218,7 +203,6 @@
 }
 
 .info-title {
-   
     font-size: 40px;
     margin: 0;
 }
@@ -230,7 +214,7 @@ ul {
 
 ul li:before {
     content: '✔';
-    color: yellow;
+    color: #dfc327;
 }
 .yoga-type img{
     width: 100%;
@@ -250,7 +234,6 @@ ul li:before {
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: yellow;  
 }
 
 .type-desc:hover .five-types {
@@ -275,7 +258,7 @@ ul li:before {
 .five-types img {
     width: 8vw;
     height: 20vh;
-    border:4px solid yellow;
+    border:4px solid #dfc327;
     border-radius: 50%;
     margin-top: 20%;
 }
@@ -287,8 +270,7 @@ ul li:before {
 }
 
 .type-desc p {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .yoga-benefit {
@@ -310,7 +292,6 @@ ul li:before {
     width: 50%;
     display: flex;
     align-items: center;
-    
 }
 
 .yoga-benefit-left-txt {
@@ -335,7 +316,6 @@ ul li:before {
 .mob-app {
     display: flex;
     height: 100vh;
-    background-color: yellow;
 }
 
 .mob-app:hover .mob-app-left-img {
@@ -347,7 +327,6 @@ ul li:before {
     position: relative;
     animation: zooming 0.7s 1s ease-out;
 }
-
 
 .mob-app-left-img, .mob-app-right-content {
     width: 50%;
@@ -375,7 +354,7 @@ ul li:before {
     height: 12%;
     font-size: 20px;
     border-radius: 20px;
-    color: yellow;
+    color: #dfc327;
     background-color: white;
     border: none;
 }
@@ -422,21 +401,18 @@ ul li:before {
     font-size:35px;
 }
 
-
 .membership-info {
     width: 35vw;
     text-align: center;
 }
 
 .membership-price {
-    color: yellow;
+    color: #dfc327;
 }
 
 .about {
     height: 100vh;
     display: flex;
-    background-color: yellow;
-    
 }
 
 .about-us {
@@ -481,7 +457,6 @@ ul li:before {
     flex-direction: column;
     font-size: 18px ;
     margin-left: 70px;
-    
 }
 
 .y-club-left-img img {
@@ -520,7 +495,6 @@ ul li:before {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: -10px;
     font-size: 10px;
     line-height: 25px;
     margin: 5% 0 0 10%;
@@ -542,9 +516,9 @@ ul li:before {
 }
 
 .contact-git-right {
-     display: flex;
+    display: flex;
     font-size: 18px;
-     height: 85vh;
+    height: 80vh;
     width: 40%;
     background-color: white;
     border-radius: 10px;
@@ -581,28 +555,9 @@ input, textarea {
     border-radius: 40px;
     }
 
-    .head {
-        width: 100%;
+    .head{
+        height: 0;
     }
-    
-    .head-title-img img {
-        width: 60%;
-        height: 80%;
-    }
-
-    .parent {
-        width: 100%;
-        overflow-x: hidden;
-    }
-    .head-icons {
-        margin-right: 130px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        font-size:1.4em;
-        margin-top:12px;
-    } 
-
     .view-bar {
         margin-top: 12%;
     }
@@ -614,14 +569,12 @@ input, textarea {
     .event-info {
         display: flex;
         flex-flow: column;
-        height: 140vh;
+        height: 130vh;
     }
 
     .event-info-left, .event-info-right {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
     }
 
     .event-info-right {
@@ -640,7 +593,6 @@ input, textarea {
     }
     .event-title-name {
         font-size: 3em;
-        font-family:"";
         margin: 0;
     }
     
@@ -650,31 +602,14 @@ input, textarea {
     }
 
     .about-event{
-        width: 100%;
         height: 160vh;
-    }
-
-    .about-event-sub {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        height: 160vh;
     }
+
     .four-about-event {
         height: 30vh;
         width: 75%;
-        background-color: white;
-        align-items: center;
-        border-radius: 10%;
-       
-    }
-
-    .four-about-event img {
-        width: 35%;
-        height: 35%;
-        background-color: yellow;
-        border-radius: 50%;
-        margin-top: 10%;
     }
 
     .four-about-event p {
@@ -687,16 +622,13 @@ input, textarea {
         height: 150vh;
     }
 
-    .yoga-type-left-img, .yoga-type-right-info {
+    .yoga-type-left-img {
         width:100%;
-        display: flex;
-
     }
 
     .yoga-type-right-info {
         display: flex;
         flex-direction: column;
-        align-items: left;
         margin: 3%;
         font-size: 1.5em;
     }
@@ -710,7 +642,7 @@ input, textarea {
 
     .info-title {
         font-size: 1.5em;
-        margin: 0;
+        width: 50vw;
     }
 
     .type-desc {
@@ -725,36 +657,25 @@ input, textarea {
         width: 70vw;
         height: 60vh ;
         margin: 0;
-        background-color: white;
-        border-radius: 7%;
-        align-items: center;
-        text-align: center;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 23px;
     }
 
     .five-types img {
-        width: 32vw;
-        height: 20vh;
-        border-radius: 50%;
-        margin-top: 5%;
+        width: 20vw;
+        height: 15vh;
     }
 
     .five-types h4 {
         font-size:  20px;
-        color: rgb(63, 63, 63);
-        letter-spacing: 2px;
         margin-bottom: 10px;
     }
 
     .five-types p {
         font-size: 0.7em;
-
     }
 
     .yoga-benefit {
         height: 130vh;
-        width: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -777,7 +698,7 @@ input, textarea {
     }
 
     .mob-app {
-        height: 195vh;
+        height: 185vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -791,7 +712,7 @@ input, textarea {
     .mob-app-right-content {
         width: 70%;
         font-size: 1.2em;
-        margin: 0 0 0 10%;
+        margin: 0;
     }
 
     .mob-app-btn {
@@ -800,7 +721,6 @@ input, textarea {
     }
 
     .yoga-membership {
-        width: 100%;
         height: 160vh;
         display: flex;
         flex-direction: column;
@@ -828,19 +748,19 @@ input, textarea {
         height: 70vh;
         width: 70vw;
     }
+    
     .about {
-        width: 100%;
-        height: 160vh;
+        height: 140vh;
         display: flex;
         flex-flow: column;
-        align-items: center;
+        align-items: center;    
         gap: 20px;
     }
+
     .about-us {
         width: 70%;
         margin: 0;
     }
-
     .about-crpt-well, .about-yoga-bnft {
         width: 70%;
         height: 22%;
@@ -849,18 +769,14 @@ input, textarea {
     }
 
     .y-club {
-        height: 160vh;
-        width: 100vw;
+        height: 180vh;
         display: flex;
         flex-flow: column;
-        align-items: center;
-        margin: 0;
-    
     }
 
     .y-club-left-img img {
-        height: 70vh;
-        width: 70vw;    
+        height: 90vh;
+        width: 90vw;    
     }
 
     .y-club-right-content {
@@ -878,7 +794,6 @@ input, textarea {
         width:60vw;
     }
     .contact {
-        width: 100%;
         height: 200vh;
         display: flex;
         flex-flow: column;
@@ -893,10 +808,11 @@ input, textarea {
     }
 }
 
-@media (min-width:768px) and (max-width:1024px) {
-    .parent {
-        overflow-x: hidden;
+@media (min-width:768px) and (max-width:1024px) {   
+    .head {
+        height: 0;
     }
+
     .view-bar i {
         margin-top: 4%;
     }
@@ -914,38 +830,27 @@ input, textarea {
     }
 
     .about-event {
-        width: 100%;
         height: 100vh;
-    }
-
-    .about-event-sub {
         display: grid;
         grid-template: auto auto/auto auto;
-        width: 100%;
-        height: 100vh;
     }
     
     .four-about-event {
         display: flex;  
         height: 40vh;
-        width: 40vw;
-        background-color: white;
-       
-        align-items: center;
-        border-radius: 10%;
+        width: 40vw;    
     }
     
     .yoga-type {
-        height: 220vh;
-        width: 100%;
+        height: 200vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     
     .yoga-type-left-img, .yoga-type-right-info {
-        width:100%;
         display: flex;
-    
+        width: 90%;
     }
     
     .yoga-type-right-info {
@@ -975,7 +880,7 @@ input, textarea {
     
     .yoga-benefit {
         display: grid;
-        height: 200vh;
+        height: 160vh;
     }
     
     .yoga-benefit-left-txt, .yoga-benefit-right-img {
@@ -989,6 +894,11 @@ input, textarea {
         font-size: 27px;
         color: rgb(71, 70, 70);
         margin: 5% 0 0 0;
+    }   
+
+    .yoga-benefit-right-img img {
+        width:  90%;
+        height: 90%;
     }
     
     .yoga-benefit-left-txt p {
@@ -1002,7 +912,7 @@ input, textarea {
     }
 
     .mob-app-left-img img {
-        width: 45vw;
+        width: 40vw;
         height: 89vh;
     }
 
@@ -1018,8 +928,11 @@ input, textarea {
     }
 
     .yoga-membership {
-        height: 120vh;
-        margin-left: 5%;
+        height: 110vh;
+    }
+
+    .yoga-membership-right-img img {
+        height: 90%;
     }
 
     .about {
@@ -1051,27 +964,23 @@ input, textarea {
     }
 
     .y-club {
-        height: 190vh;
+        height: 170vh;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     .y-club-right-content {
-        display: flex;
-        flex-direction: column;
         font-size: 18px ;
-        margin-left: 70px;
-      
     }
     
     .y-club-left-img img {
-        width: 100%;
-        height: 100%;
+        width: 90vw;
+        height: 70vh;
     }
 
     .y-club-right-content p {
-        width: 100%;
+        width: 50vw;
     }
     
     form {
@@ -1081,39 +990,12 @@ input, textarea {
 }
 
 @media (min-width:500px) and (max-width:768px) {
-
-    .parent {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .hover-btn1 {
         width: 30%;
         height: 8vh;
         font-size: 1em;
         border-radius: 40px;
     }
-    
-    .head {
-        width: 100%;
-    }
-    .head-title-img {
-        width: 50%;
-    }
-    .head-title-img img {
-        width: 50%;
-        height: 100%;
-    }
-
-    .head-icons {
-        width: 60%;
-        margin-right: 200px;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        font-size:1.8em;
-        margin-top:10px;
-    } 
 
     .view-bar {
         margin-top: 10%;
@@ -1122,17 +1004,18 @@ input, textarea {
     .view-bar h2 {
         margin-top: -0.5%;
     }
+
+    .view-bar i {
+        margin-top: -0px;
+    }
     .event-info {
         display: flex;
         flex-flow: column;
-        height: 170vh;
+        height: 160vh;
     }
 
     .event-info-left, .event-info-right {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .event-info-right {
@@ -1152,7 +1035,6 @@ input, textarea {
     }
     .event-title-name {
         font-size: 3em;
-        font-family:"";
         margin: 0;
     }
     
@@ -1162,21 +1044,13 @@ input, textarea {
     }
 
     .about-event{
-        width: 100%;
         height: 80vh;
-    }
-
-    .about-event-sub {
         display: grid;
         grid-template: auto auto/auto auto;
-        height: 80vh;
     }
     .four-about-event {
-        display: flex;
-        justify-content: space-evenly;
         height: 30vh;
         width: 35vw;
-        border-radius: 10%;
     }
 
     .four-about-event p {
@@ -1186,24 +1060,14 @@ input, textarea {
     .yoga-type {
         display: flex;
         flex-flow: column;
-        height: 170vh;
+        height: 150vh;
     }
 
-    .yoga-type-left-img, .yoga-type-right-info {
-        width:100%;
-        height: 80vh;
-        display: flex;
-
+    .yoga-type-left-img 
+    {
+        width: 80%;
     }
    
-    .yoga-type-right-info {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        margin-left: 10%;
-        font-size: 1.5em;
-    }
-
     .hover-btn2 {
         width: 40vw;
         height: 70px;
@@ -1227,24 +1091,16 @@ input, textarea {
     .five-types {
         width: 35vw;
         height: 70vh ;
-        margin: 0;
-        background-color: white;
-        border-radius: 7%;
-        font-size: 20px;
-        line-height: 30px;
+        margin: 0;   
     }
 
     .five-types img {
         width: 16vw;
         height: 20vh;
-        border-radius: 50%;
-        margin-top: 5%;
     }
 
     .five-types h4 {
         font-size:  22px;
-        letter-spacing: 2px;
-        margin-bottom: 10px;
     }
 
     .five-types p {
@@ -1252,16 +1108,15 @@ input, textarea {
     }
 
     .yoga-benefit {
-        height: 160vh;
-        width: 100%;
+        height: 140vh;
         display: flex;
         flex-flow: column;
         align-items: center;
     }
 
     .yoga-benefit-left-txt {
-        font-size: 1.4em;
-        width: 80%;
+        font-size: 1.5em;
+        width: 100%;
     }
 
     .yoga-benefit-left-txt button {
@@ -1300,7 +1155,7 @@ input, textarea {
     }
 
     .yoga-membership {
-        height: 200vh;
+        height: 180vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1324,8 +1179,8 @@ input, textarea {
     }
 
     .yoga-membership-right-img img {
-        height: 100vh;
-        width: 100vw;
+        height: 90vh;
+        width: 100%;
     }
 
     .about {
@@ -1349,17 +1204,18 @@ input, textarea {
     }
 
     .y-club {
-        height: 220vh;
+        height: 200vh;
         width: 100%;
         display: flex;
         flex-flow: column;
-        margin: 0;
-    
     }
 
+    .y-club-left-img img {
+        height: 100%;
+    }
     .y-club-left-img {
-        height: 100vh;
-        width: 90vw;    
+        height: 80vh;
+        width: 90%;    
         margin-left: 50px;
     }
 
@@ -1379,8 +1235,7 @@ input, textarea {
         width:45vw;
     }
     .contact {
-        width: 100%;
-        height: 250vh;
+        height: 240vh;
         display: flex;
         flex-flow: column;
         align-items: center;
